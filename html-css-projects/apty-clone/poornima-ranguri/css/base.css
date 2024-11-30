@@ -1,0 +1,77 @@
+*{
+   margin: 0;
+}
+
+
+/* Header Styles */
+header.top {
+   background: linear-gradient(90deg, #2c003e, #1a0032); /* Purple gradient */
+   padding: 15px 30px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: white; /* White text for contrast */
+ }
+
+ .container-nav-bar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 98%;
+ }
+ 
+ .apty-logo {
+   height: 45px;
+ }
+ 
+ .nav-bar {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+ 
+ .nav-list-container {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .nav-item a {
+   text-decoration: none;
+   color: white; /* Matches the purple theme */
+   font-weight: 600;
+   padding: 5px 15px;
+   font-size: 1rem;
+ }
+ 
+ .nav-item a:hover {
+   color: #f58220; /* Highlight color for hover (orange from the logo) */
+   background-color: rgba(255, 255, 255, 0.1); /* Light overlay */
+   border-radius: 5px;
+ }
+ 
+ .icon-in-menu {
+   margin-left: 5px;
+   font-size: 0.8rem;
+ }
+ 
+ .book-demo-btn {
+   background: #f58220; /* Orange color */
+   color: white;
+   padding: 10px 20px;
+   text-decoration: none;
+   border-radius: 20px;
+   font-size: 0.9rem;
+   font-weight: 600;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   transition: background 0.3s ease;
+ }
+ 
+ .book-demo-btn:hover {
+   background: #d46c1c;
+   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+ }
+ 
+
+ 

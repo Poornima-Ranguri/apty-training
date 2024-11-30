@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apty Clone</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="top">
+        <div class="container-nav-bar desktop-container-nav-bar-hidden">
+            <div class="nav-bar">
+                <img src="https://www.apty.io/wp-content/uploads/2024/06/logo.svg" alt="Apty logo" class="apty-logo">
+                <nav>
+                    <ul class="nav-list-container">
+                        <li class="nav-item">
+                            <a href="#">Platform</a>
+                            <i class="fa fa-angle-down icon-in-menu" aria-hidden="true"></i>
+                        </li>
+                        <li class="nav-item"><a href="#">Solutions</a></li>
+                        <li class="nav-item"><a href="#">Resources</a></li>
+                        <li class="nav-item"><a href="#">About Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="#" class="book-demo-btn">BOOK A DEMO</a>
+        </div>
+        <!-- <div class="mobile-view-container">
+            <img src="https://www.apty.io/wp-content/uploads/2024/06/logo.svg" alt="Apty logo" class="apty-logo">
+            <button class="menu-toggle">
+                <span class="hamburger"></span>
+            </button>
+        </div>
+        <nav class="mobile-nav hidden hidden">
+			<a href="#" class="book-demo-btn">BOOK A DEMO</a>
+            <ul>
+				
+                <li><a href="#">Platform</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav> -->
+
+				<!-- Mobile View Make Responsive here -->
+		<div class="mobile-view-container">
+			<img src="https://www.apty.io/wp-content/uploads/2024/06/logo.svg" alt="Apty logo" class="apty-logo">
+			<button class="menu-toggle">
+				<span class="hamburger"></span>
+			</button>
+		</div>
+
+		<!-- Mobile Navigation -->
+		<nav class="mobile-nav hidden">
+			<a href="#" class="book-demo-btn">BOOK A DEMO</a>
+			<ul>
+				<li><a href="#">Platform</a></li>
+				<li><a href="#">Solutions</a></li>
+				<li><a href="#">Resources</a></li>
+				<li><a href="#">About Us</a></li>
+			</ul>
+		</nav>
+
+		<!-- Modal -->
+		<div class="modal hidden">
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<p>Modal Content Here</p>
+			</div>
+		</div>
+
+    </header>
+
+	<section class="hero-desktop">
+		<div class="video-background-container">
+			<video autoplay muted loop id="background-video">
+				<source src="https://www.apty.io/wp-content/uploads/2024/07/main-final-video.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+			<div class="content">
+				<div class="wpb_wrapper">
+					<h1>Enhance Every<br>
+					Software <span class="pink-gradient">With Apty’s<br>
+					Digital Adoption Platform<br>
+					</span></h1>
+
+					
+					<p class="paragraph-hero-section">With usage monitoring, prescriptive workflows,<br>
+						and cross application guidance, finally understand<br>
+						what software is being used and how to fix user adoption.
+					</p>
+					<h6>
+						<span class="link_wrap">
+						  <a class="link_text" role="button" href="/book-a-demo/">
+							<span class="text">GET STARTED</span>
+						  </a>
+						</span>
+					  </h6>
+
+					  <div class="clients-container">
+						<div class="no-link" style="opacity: 1;">
+							<img decoding="async" src="https://www.apty.io/wp-content/uploads/2024/08/jhi.svg" alt="client" width="144" height="34">	
+						</div>
+						<div class="no-link" style="opacity: 1;">
+							<img decoding="async" src="https://www.apty.io/wp-content/uploads/2024/08/Group-1410076891.svg" alt="client" width="144" height="34">	
+						</div>
+						<div class="no-link" style="opacity: 1;">
+							<img decoding="async" src="https://www.apty.io/wp-content/uploads/2024/08/Group-1410076890.svg" alt="client" width="144" height="34">	
+						</div>
+						<div class="no-link" style="opacity: 1;">
+							<img loading="lazy" decoding="async" src="https://www.apty.io/wp-content/uploads/2024/08/Group-1410076887.svg" alt="client" width="144" height="34">	
+						</div>
+					  </div>
+				</div>			
+			</div>
+		</div>		
+	</section>
+
+	<!-- Augmented Intelligence Section -->
+
+	<div class="augmented-section">
+		<div class="card-augmented-section">
+			<h1>Augmented Intelligence for</h1>
+			<p>Carousal</p>
+			<p>The only GenAI powered Cross Application Co-Pilot
+				that solves your software adoption problem.
+			</p>
+			<img decoding="async" src="https://www.apty.io/wp-content/uploads/2024/08/oracle-dashboard.svg" class="dashboard-image">
+			<div class="ai-automated-container">
+
+			</div>
+		</div>
+
+		
+	</div>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            const mobileNav = document.querySelector('.mobile-nav');
+            mobileNav.classList.toggle('hidden');
+        });
+
+		document.querySelector('.menu-toggle').addEventListener('click', function() {
+			// Toggle modal visibility
+			const modal = document.querySelector('.modal');
+			modal.classList.toggle('hidden'); // Toggle the hidden class
+		});
+		
+		// Close modal when user clicks on the close button
+		document.querySelector('.close').addEventListener('click', function() {
+			const modal = document.querySelector('.modal');
+			modal.classList.add('hidden'); // Add hidden class to hide modal
+		});
+		
+		// Close modal if user clicks outside the modal content
+		window.addEventListener('click', function(event) {
+			const modal = document.querySelector('.modal');
+			if (event.target === modal) {
+				modal.classList.add('hidden'); // Add hidden class to hide modal
+			}
+		});
+		
+		
+    </script>
+</body>
+</html>
