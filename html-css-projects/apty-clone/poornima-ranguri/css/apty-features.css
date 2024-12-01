@@ -1,0 +1,598 @@
+*{
+  margin: 0;
+}
+
+
+/* Header Styles */
+header.top {
+  background: linear-gradient(90deg, #2c003e, #1a0032); /* Purple gradient */
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white; /* White text for contrast */
+  
+}
+
+.container-nav-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.apty-logo {
+  height: 45px;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-list-container {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center; /* Ensures icon and text are aligned vertically */
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px;
+  font-size: 1rem;
+  gap: 5px; /* Spacing between text and icon */
+}
+
+.icon-in-menu {
+  font-size: 0.9rem; /* Slightly adjust the size of the icon */
+  transition: transform 0.3s ease; /* Add animation for interactivity */
+}
+
+/* Optional: Rotate icon on hover for better interaction */
+.nav-item:hover .icon-in-menu {
+  transform: rotate(90deg);
+}
+
+.nav-item a:hover {
+  color: #f58220;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+
+.book-demo-btn {
+  background: #f58220; /* Orange color */
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s ease;
+}
+
+.book-demo-btn:hover {
+  background: #d46c1c;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Hero Section */
+
+.hero-container{
+  background-image: url("https://www.apty.io/wp-content/uploads/2024/06/bg-hero.svg");
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-container .text-container{
+  color: #efefef;
+  font-weight: bold;
+  padding: 30px;
+  font-size: 30px;
+}
+
+.pink-gradient {
+  background-image: linear-gradient(358deg, #FF7725, #FC52B3);
+  background-clip: text;
+  color: transparent;
+  
+}
+
+.hero-container .text-container p{
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+.hero-container img{
+  width: 40%;
+  margin-right: 30px;
+}
+
+
+.link_wrap {
+  background-image: linear-gradient(358deg, #FF7725, #FC52B3);
+  border-radius: 999px; /* This creates a rounded button shape */
+  padding: 12px 30px; /* Slightly increase the padding */
+  margin-top: 50px;
+  display: inline-block; /* Display the button inline */
+  cursor: pointer;
+}
+
+.link_text {
+  color: white; /* Set the text color to white for visibility */
+  text-decoration: none; /* Remove the default link underline */
+  font-weight: bold; /* Optionally, make the text bold */
+  font-size: 16px; /* Slightly increase the font size */
+}
+
+
+/* Autmation Container */
+
+.automation-container{
+  background: linear-gradient(39deg, rgb(251,225,209) 10%, rgb(230,211,226) 90%);
+
+  padding: 50px;
+  text-align: center;
+}
+
+.page-submenu {
+  width: 95%;
+
+}
+
+
+.page-submenu li{
+  display: inline-block !important;
+  margin: 8px 7px 4px 0px;
+  background: #F8E9E7;
+  border-radius: 100px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.page-submenu li a{
+  color:  inherit;
+  text-decoration: none;
+}
+
+
+
+.page-submenu li:hover {
+  background-image: linear-gradient(358deg, #FF7725, #FC52B3);
+}
+
+
+
+/* Data Container */
+
+.data-monitoring-container{
+  margin-top: 30px;
+  background: #fff;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  display: flex;
+
+}
+
+
+.data-monitoring-container .text-container{
+  text-align: left;
+  width: 50%;
+
+}
+
+.data-monitoring-container .text-container h3{
+  font-size: 40px;
+}
+
+.data-monitoring-container .text-container p {
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.data-monitoring-container .image-wrapper iframe{
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+
+
+/* smart */
+
+.smart{
+  margin-top: 30px;
+  background: #e6e6e6;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  display: flex;
+
+}
+
+
+.smart .text-container{
+  text-align: left;
+  width: 50%;
+
+}
+
+.smart .text-container h3{
+  font-size: 40px;
+}
+
+.smart .text-container p {
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.smart .image-wrapper iframe{
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+
+
+/* cross */
+
+
+.cross{
+  margin-top: 30px;
+  background: #fff;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  display: flex;
+
+}
+
+
+.cross .text-container{
+  text-align: left;
+  width: 50%;
+
+}
+
+.cross .text-container h3{
+  font-size: 40px;
+}
+
+.cross .text-container p {
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.cross .image-wrapper iframe{
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+
+/* multi */
+
+
+.multi{
+  margin-top: 30px;
+  background: #e6e6e6;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 150px;
+  display: flex;
+
+}
+
+
+.multi .text-container{
+  text-align: left;
+  width: 50%;
+
+}
+
+.multi .text-container h3{
+  font-size: 40px;
+}
+
+.multi .text-container p {
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.multi .image-wrapper iframe{
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+}
+
+/* customer-container */
+
+.customer-section-container{
+  background: linear-gradient(178deg, rgb(13, 4, 27), rgb(43, 21, 66) 90%);
+  padding: 30px;
+}
+
+.success-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  color: #efefef;
+
+}
+
+.success-container h1{
+  font-size: 30px;
+}
+
+
+.buttons-container{
+  border: solid;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+
+.buttons-container .text{
+  padding: 20px;
+  margin-left: 10px;
+}
+
+
+.active{
+  /* border: 1p solid white; */
+  background: #8131FF;
+  padding: 20px;
+  border-radius: 20px
+}
+
+
+
+
+/* case-study-container */
+
+.case-study-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.case-study-container{
+  background-image: url("https://www.apty.io/wp-content/uploads/2024/08/Frame-6.jpeg");
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  color: #efefef;
+  text-align: left;
+  border-radius: 30px;
+  padding-top: 80px;
+  margin-right: 20px;
+}
+
+.case-study-container h3{
+  font-weight: 500;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.case-study-container h1{
+  font-size: 30px;
+  padding-left: 30px;
+  
+  
+
+
+}
+
+
+.case-study-container h1:hover{
+  text-decoration: underline;
+}
+
+.case-study-container p{
+  font-family: 500;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+
+/* pink */
+
+.case-study-container-2{
+  background-image: url("https://www.apty.io/wp-content/uploads/2024/08/Frame-5.jpeg");
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  color: #efefef;
+  text-align: left;
+  border-radius: 30px;
+  padding-top: 80px;
+  margin-right: 20px;
+}
+
+.case-study-container-2 h3{
+  font-weight: 500;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.case-study-container-2 h1{
+  font-size: 30px;
+  padding-left: 30px;
+  
+  
+
+
+}
+
+
+.case-study-container-2 h1:hover{
+  text-decoration: underline;
+}
+
+.case-study-container-2 p{
+  font-family: 500;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+/* purple light */
+
+
+.case-study-container-3{
+  background-image: url("https://www.apty.io/wp-content/uploads/2024/08/Frame-6.jpeg");
+  background-size: cover;
+  width: 500px;
+  height: 300px;
+  color: #efefef;
+  text-align: left;
+  border-radius: 30px;
+  padding-top: 80px;
+}
+
+.case-study-container-3 h3{
+  font-weight: 500;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.case-study-container-3 h1{
+  font-size: 30px;
+  padding-left: 30px;
+  
+  
+
+
+}
+
+
+.case-study-container-3 h1:hover{
+  text-decoration: underline;
+}
+
+.case-study-container-3 p{
+  font-family: 500;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+
+
+
+/* Footer */
+
+
+footer{
+  background-color:#212121;
+  padding: 30px;
+  position: relative;
+}
+
+footer .footer-list-container{
+  display: flex;
+  justify-content: space-between;
+  
+  list-style-type: none;
+
+
+}
+
+footer .footer-list-container h3{
+  font-weight: bold;
+  font-size: 27px;
+  padding-bottom: 20px;
+  color: #efefef;
+}
+
+
+footer .footer-list-container a {
+  color: #888888;
+  font-size: 20px;
+  display: inline-block; /* Allows them to be inline yet control spacing */
+  margin-bottom: 10px; /* Adds space between the elements */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+.footer-copyright {
+  text-align: center; /* Center the text */
+  color: #888888; /* Lighter color for contrast */
+  font-size: 16px; /* Adjust size as needed */
+  margin-top: 20px; /* Add space above the copyright */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copyright p {
+  margin: 0; /* Remove default margins for better spacing */
+}
+
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #888888; /* Icon color */
+  font-size: 24px; /* Icon size */
+  margin: 0 10px; /* Spacing between icons */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #ffffff; /* Change color on hover */
+}
+
+
+footer .enhance-container {
+  background: linear-gradient(285deg, rgb(251, 92, 148) 10%, rgb(255, 125, 49) 90%);
+  position: absolute;
+  z-index: 1; /* Ensure it overlaps content above */
+  width: 80%;
+  top: -50px; /* Adjust this value as needed to control how much it overlaps */
+  padding: 30px; /* Add padding for content inside */
+  text-align: center; /* Center-align the content */
+  color: white; /* Optional: set text color for readability */
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual effect */
+  margin-left:60px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+footer button{
+  background-color: transparent;
+  padding: 20px;
+  border-color: inherit;
+  border-radius: 30px;
+}

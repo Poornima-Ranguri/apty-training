@@ -795,6 +795,10 @@ footer .footer-list-container a {
     text-decoration: none;
 }
 
+footer .footer-list-container a:hover{
+    color: #FF7725;
+
+}
 
 .footer-copyright {
     text-align: center; /* Center the text */
