@@ -1,200 +1,166 @@
-/* Mobile View */
-@media (max-width: 768px) {
-    .hero {
+@media only screen and (max-width: 768px) {
+    /* Global Responsive Adjustments */
+    * {
+      box-sizing: border-box;
+    }
+  
+    /* Header */
+    header.top {
       flex-direction: column;
+      flex-wrap: wrap;
+      padding: 10px;
       text-align: center;
-      padding: 30px;
+      width: 100vw;
     }
-    .hero-content {
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-    .hero-image img {
-      max-width: 90%;
-    }
-    .hero-buttons {
+  
+    .container-nav-bar {
       flex-direction: column;
+      align-items: center;
       gap: 10px;
     }
-    .mobile-view-container {
-        display: block;
-        justify-content: space-between;
+  
+    .nav-bar {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      display: none;
     }
-    .desktop-container-nav-bar-hidden {
-        display: none;
+  
+    .book-demo-btn {
+      width: 100%;
+      max-width: 300px;
+      padding: 10px;
+      font-size: clamp(0.7rem, 3vw, 0.8rem);
     }
+  
+    /* Hero Section */
 
-    .mobile-nav.hidden {
-        display: none;
-    }
+    .hero-mobile-container{
+        display: flex;
+        background-image: url("../assets/bg-mobile-4.svg");
 
-    /* Modal Styles */
-    .modal {
-        display: none; /* Hide modal by default */
-        position: fixed; /* Fixed position to overlay the entire screen */
-        z-index: 1; /* Ensure modal is on top */
-        left: 0;
-        top: 0;
-        width: 100%; /* Full screen width */
-        height: 100%; /* Full screen height */
-        background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
-        overflow: auto; /* Enable scrolling if the modal content is long */
     }
 
-    .modal-content {
-        background-color: #fff;
-        margin: 15% auto; /* Center modal */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 80%; /* Adjust the width as per your design */
-    }
-
-    .close {
-        color: #aaa;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: black;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-      /* Ensure the video covers the entire screen */
-      .video-background-container {
-        position: relative;
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        overflow: hidden;
-    }
-
-    #background-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the video covers the screen */
-        z-index: -1; /* Keeps the video in the background */
-    }
-
-
-}
-
-/* Desktop View */
-@media (min-width: 768px) {
-    .mobile-view-container {
-        display: none;
-    }
-    .hidden {
-        display: none;
-    }
-
-    .hero-desktop{
-        height: 90%;
-        width: 100%;
-    }
-
-        /* Ensure the video covers the entire screen */
-    .video-background-container {
-        position: relative;
-        width: 100%;
-        height: 100vh; /* Full viewport height */
-        overflow: hidden;
-    }
-
-    #background-video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensures the video covers the screen */
-        z-index: -1; /* Keeps the video in the background */
-    }
-
-    /* Content on top of the video */
     .content {
-        position: absolute;
-        top: 50%;
-        left: 20%;
-        transform: translate(-50%, -50%);
-        color: white;
-        font-size: 2rem;
+      font-size: clamp(1.2rem, 4vw, 1.5rem);
+      top: 45%;
+      left: 50%;
+      transform: translate(-50%, -45%);
+      text-align: center;
+      width: 90%;
     }
-
-    .wpb-wrapper{
-        color: fff;
+  
+    .paragraph-hero-section {
+      font-size: clamp(14px, 3.5vw, 16px);
+      padding: 0 10px;
     }
-
-    .pink-gradient {
-        background-image: linear-gradient(358deg, #FF7725, #FC52B3);
-        background-clip: text;
-        color: transparent;
-        
-    }
-
-    .paragraph-hero-section{
-        font-size: 20px;
-    }
-
+  
     .link_wrap {
-        background-image: linear-gradient(358deg, #FF7725, #FC52B3);
-        border-radius: 999px; /* This creates a rounded button shape */
-        padding: 12px 30px; /* Slightly increase the padding */
-        margin-top: 50px;
-        display: inline-block; /* Display the button inline */
-      }
-      
-      .link_text {
-        color: white; /* Set the text color to white for visibility */
-        text-decoration: none; /* Remove the default link underline */
-        font-weight: bold; /* Optionally, make the text bold */
-        font-size: 16px; /* Slightly increase the font size */
-      }
-
-      .clients-container{
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-      }
-
-      .augmented-section{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 50px;
-        margin-bottom: 30px;
-        background: linear-gradient(180deg,  rgb(50, 23, 90) 42%, rgb(45, 26, 69) 0%, rgb(50, 23, 90) 42%, rgb(50, 23, 90) 60%);
-        background-attachment: scroll;
-                
-      }
-
-      .card-augmented-section{
-        background-color: #8131ff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        color: #fff;
-        position: absolute;
-        padding: 30px;
-        margin-bottom: 30px;
-        border-radius: 20px;
-      }
-
-      .ai-automated-container{
-        position: absolute;
-        height: 30px;
-      }
-
-      .dashboard-image{
-        height: 200px;
-
-      }
-      
-
-}
+      width: 90%;
+      margin: 20px auto;
+      text-align: center;
+    }
+  
+    /* Augmented Section */
+    .augmented-content {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .augmented-title {
+      font-size: clamp(1.5rem, 5vw, 1.8rem);
+      text-align: center;
+    }
+  
+    .augmented-subtitle {
+      font-size: clamp(1rem, 4vw, 1.2rem);
+      text-align: center;
+    }
+  
+    .text-carousel {
+      width: 100%;
+      margin: 0 auto 10px auto;
+      text-align: center;
+    }
+  
+    /* Elimination Friction Section */
+    .elimination-friction-container {
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .elimination-friction-container .text-container h1 {
+      font-size: clamp(1.5rem, 5vw, 1.8rem);
+    }
+  
+    .remove-barriers-container-2 .text-container {
+      text-align: center;
+    }
+  
+    .remove-barriers-container-2 .text-container h4 {
+      font-size: clamp(1.2rem, 4vw, 1.5rem);
+    }
+  
+    .remove-barriers-container-2 .text-container p {
+      font-size: clamp(14px, 3.5vw, 16px);
+    }
+  
+    /* Enhance Section */
+    .enhance-section-container {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .enhance-text-container {
+      font-size: clamp(16px, 4vw, 20px);
+      text-align: center;
+    }
+  
+    .accuracy-list-container .list-item {
+      width: 90%;
+      margin: 10px auto;
+      padding: 15px;
+      font-size: clamp(16px, 4vw, 18px);
+    }
+  
+    /* Companion Section */
+    .companion-container {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .companion-container .image-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .companion-container .image-wrapper img {
+      width: 80%;
+      max-width: 400px;
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .companion-container .text-container {
+      width: 100%;
+      text-align: center;
+    }
+  
+    /* Workflow Section */
+    .workflow-and-data-calidation-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+  
+    .container-work {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }

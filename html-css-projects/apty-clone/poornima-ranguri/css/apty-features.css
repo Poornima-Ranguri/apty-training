@@ -10,8 +10,10 @@ header.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white; /* White text for contrast */
-  
+  color: white; 
+  position: fixed;
+  width: 100vw;
+
 }
 
 .container-nav-bar{
@@ -45,21 +47,21 @@ header.top {
 
 .nav-item a {
   display: flex;
-  align-items: center; /* Ensures icon and text are aligned vertically */
+  align-items: center; 
   text-decoration: none;
   color: white;
   font-weight: 600;
   padding: 5px 10px;
   font-size: 1rem;
-  gap: 5px; /* Spacing between text and icon */
+  gap: 5px;
 }
 
 .icon-in-menu {
-  font-size: 0.9rem; /* Slightly adjust the size of the icon */
-  transition: transform 0.3s ease; /* Add animation for interactivity */
+  font-size: 0.9rem; 
+  transition: transform 0.3s ease; 
 }
 
-/* Optional: Rotate icon on hover for better interaction */
+
 .nav-item:hover .icon-in-menu {
   transform: rotate(90deg);
 }
@@ -72,7 +74,7 @@ header.top {
 
 
 .book-demo-btn {
-  background: #f58220; /* Orange color */
+  background: #f58220; 
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -81,6 +83,7 @@ header.top {
   font-weight: 600;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   transition: background 0.3s ease;
+  margin-right: 30px;
 }
 
 .book-demo-btn:hover {
@@ -108,6 +111,7 @@ header.top {
   font-size: 30px;
 }
 
+
 .pink-gradient {
   background-image: linear-gradient(358deg, #FF7725, #FC52B3);
   background-clip: text;
@@ -128,18 +132,18 @@ header.top {
 
 .link_wrap {
   background-image: linear-gradient(358deg, #FF7725, #FC52B3);
-  border-radius: 999px; /* This creates a rounded button shape */
-  padding: 12px 30px; /* Slightly increase the padding */
+  border-radius: 999px; 
+  padding: 12px 30px;
   margin-top: 50px;
-  display: inline-block; /* Display the button inline */
+  display: inline-block; 
   cursor: pointer;
 }
 
 .link_text {
-  color: white; /* Set the text color to white for visibility */
-  text-decoration: none; /* Remove the default link underline */
-  font-weight: bold; /* Optionally, make the text bold */
-  font-size: 16px; /* Slightly increase the font size */
+  color: white; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px; 
 }
 
 
@@ -147,7 +151,6 @@ header.top {
 
 .automation-container{
   background: linear-gradient(39deg, rgb(251,225,209) 10%, rgb(230,211,226) 90%);
-
   padding: 50px;
   text-align: center;
 }
@@ -165,6 +168,7 @@ header.top {
   border-radius: 100px;
   padding: 20px;
   cursor: pointer;
+  
 }
 
 .page-submenu li a{
@@ -332,6 +336,7 @@ header.top {
 .customer-section-container{
   background: linear-gradient(178deg, rgb(13, 4, 27), rgb(43, 21, 66) 90%);
   padding: 30px;
+  padding-bottom: 150px;
 }
 
 .success-container{
@@ -509,6 +514,7 @@ header.top {
 footer{
   background-color:#212121;
   padding: 30px;
+  padding-top: 50px;
   position: relative;
 }
 
@@ -532,61 +538,67 @@ footer .footer-list-container h3{
 footer .footer-list-container a {
   color: #888888;
   font-size: 20px;
-  display: inline-block; /* Allows them to be inline yet control spacing */
-  margin-bottom: 10px; /* Adds space between the elements */
+  display: inline-block; 
+  margin-bottom: 10px;
   font-weight: bold;
   text-decoration: none;
 }
 
 
 .footer-copyright {
-  text-align: center; /* Center the text */
-  color: #888888; /* Lighter color for contrast */
-  font-size: 16px; /* Adjust size as needed */
-  margin-top: 20px; /* Add space above the copyright */
+  text-align: center; 
+  color: #888888; 
+  font-size: 16px; 
+  margin-top: 20px; 
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .footer-copyright p {
-  margin: 0; /* Remove default margins for better spacing */
+  margin: 0; 
 }
 
 
 .social-icons {
-  margin-top: 10px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 10px; 
+  margin-top: 20px; 
 }
 
+
 .social-icons a {
-  color: #888888; /* Icon color */
-  font-size: 24px; /* Icon size */
-  margin: 0 10px; /* Spacing between icons */
+  color: #888888; 
+  font-size: 24px; 
+  margin: 0 10px; 
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
-  color: #ffffff; /* Change color on hover */
+  color: #ffffff; 
 }
 
 
 footer .enhance-container {
   background: linear-gradient(285deg, rgb(251, 92, 148) 10%, rgb(255, 125, 49) 90%);
   position: absolute;
-  z-index: 1; /* Ensure it overlaps content above */
+  z-index: 1; 
   width: 80%;
-  top: -50px; /* Adjust this value as needed to control how much it overlaps */
-  padding: 30px; /* Add padding for content inside */
-  text-align: center; /* Center-align the content */
-  color: white; /* Optional: set text color for readability */
-  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visual effect */
+  top: -50px; 
+  padding: 30px; 
+  text-align: center; 
+  color: white; 
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); 
   margin-left:60px;
   margin-bottom: 50px;
   border-radius: 20px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-top: -50px;
 }
 
 

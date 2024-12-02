@@ -1,16 +1,20 @@
 *{
     margin: 0;
- }
+} 
  
- 
+
+@media only screen and (min-width: 768px){
+    
  /* Header Styles */
  header.top {
-    background: linear-gradient(90deg, #2c003e, #1a0032); /* Purple gradient */
+    background: linear-gradient(90deg, #2c003e, #1a0032);
     padding: 15px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: white; /* White text for contrast */
+    color: white; 
+   
+    width: 98%;
     
   }
  
@@ -18,7 +22,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 98%;
+    width: 100%;
   }
   
   .apty-logo {
@@ -45,21 +49,21 @@
 
 .nav-item a {
     display: flex;
-    align-items: center; /* Ensures icon and text are aligned vertically */
+    align-items: center; 
     text-decoration: none;
     color: white;
     font-weight: 600;
     padding: 5px 10px;
     font-size: 1rem;
-    gap: 5px; /* Spacing between text and icon */
+    gap: 5px; 
 }
 
 .icon-in-menu {
-    font-size: 0.9rem; /* Slightly adjust the size of the icon */
-    transition: transform 0.3s ease; /* Add animation for interactivity */
+    font-size: 0.9rem;
+    transition: transform 0.3s ease; 
 }
 
-/* Optional: Rotate icon on hover for better interaction */
+
 .nav-item:hover .icon-in-menu {
     transform: rotate(90deg);
 }
@@ -72,7 +76,7 @@
 
   
   .book-demo-btn {
-    background: #f58220; /* Orange color */
+    background: #f58220; 
     color: white;
     padding: 10px 20px;
     text-decoration: none;
@@ -98,7 +102,7 @@
   .video-background-container {
     position: relative;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     overflow: hidden;
 }
 
@@ -108,8 +112,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the screen */
-    z-index: -1; /* Keeps the video in the background */
+    object-fit: cover; 
+    z-index: -1;
 }
 
 /* Content on top of the video */
@@ -139,18 +143,18 @@
 
 .link_wrap {
     background-image: linear-gradient(358deg, #FF7725, #FC52B3);
-    border-radius: 999px; /* This creates a rounded button shape */
-    padding: 12px 30px; /* Slightly increase the padding */
+    border-radius: 999px; 
+    padding: 12px 30px; 
     margin-top: 50px;
-    display: inline-block; /* Display the button inline */
+    display: inline-block;
     cursor: pointer;
   }
   
   .link_text {
-    color: white; /* Set the text color to white for visibility */
-    text-decoration: none; /* Remove the default link underline */
-    font-weight: bold; /* Optionally, make the text bold */
-    font-size: 16px; /* Slightly increase the font size */
+    color: white;
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 16px; 
   }
 
   .clients-container{
@@ -162,19 +166,18 @@
 
 /* Augmented Section Container */
 .augmented-section-container {
-    /* background: linear-gradient(180deg, #2d1a45 0%, #32175a 42%, #32175a 60%); */
-    /* background: linear-gradient(180deg, rgb(50, 23, 90) 0%, rgb(50, 23, 90) 5%, rgb(50, 23, 90) 11%, rgb(35, 17, 55) 82%); */
+   
     background-image: linear-gradient(180deg, #2D1A47, #2c144c, #32175A, #2c154D, #231137);
     min-height: 90vh;
-    padding: 300px 70px 150px; /* Adjust for spacing */
+    padding: 300px 70px 150px; 
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
-    z-index: 1; /* Ensures the content is on top of the main background */
-    margin-top: -100px; /* Optional adjustment for smoother alignment */
+    z-index: 1;
+    margin-top: -100px; 
 }
 
 /* Augmented Content */
@@ -186,9 +189,9 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    position: absolute; /* Set absolute for precise positioning */
-    top: -220px; /* Move it upward relative to its container */
-    z-index: 2; /* Place it above the Hero section */
+    position: absolute; 
+    top: -220px;
+    z-index: 2; 
     
 }
 
@@ -202,19 +205,19 @@
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    position: relative; /* Ensure it stays within the section */
-    margin-top: -80px; /* This overlaps the hero section */
-    z-index: 2; /* Ensures it's on top of the hero content */
+    position: relative;
+    margin-top: -80px; 
+    z-index: 2; 
 }
 
 /* Augmented Section Container */
 .augmented-section-container {
-    /* background: linear-gradient(180deg, #2d1a45 0%, #32175a 42%, #32175a 60%); */
-    padding: 150px 20px 80px; /* Adjust the top padding for more space */
+   
+    padding: 150px 20px 80px; 
     color: white;
     background: linear-gradient(180deg, rgb(50, 23, 90) 0%, rgb(50, 23, 90) 5%, rgb(50, 23, 90) 50%, rgb(35, 17, 55) 92%);
     position: relative;
-    z-index: 1; /* Keeps the container below augmented content */
+    z-index: 1;
 }
 
 
@@ -224,7 +227,7 @@
     font-weight: bold;
     margin-bottom: 20px;
     color: #ffffff;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 /* Subtitle */
@@ -233,7 +236,7 @@
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 20px;
-    text-align: center; /* Center the text */
+    text-align: center; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,7 +261,7 @@
     font-size: 1.1rem;
     line-height: 1.5;
     margin-bottom: 30px;
-    text-align: center; /* Center the text */
+    text-align: center; 
 }
 
 
@@ -268,29 +271,29 @@
     max-width: 600px;
     margin: 0 auto;
     display: block;
-    border-radius: 8px; /* Optional rounded corners */
-    position: absolute; /* Absolute to create the overlapping effect */
-    top:300px; /* Adjust to control the overlap distance */
-    left: 60%; /* Center horizontally */
-    transform: translateX(-50%); /* Center align correction */
-    z-index: 2; /* Ensure it stays above augmented section but below headers */
+    border-radius: 8px; 
+    position: absolute;
+    top:300px; 
+    left: 60%; 
+    transform: translateX(-50%); 
+    z-index: 2; 
 }
 
 .augmented-text-container {
     position: relative;
-    width: 100%; /* Makes the container take full width */
-    margin: 0 auto; /* Center the container */
-    padding: 50px; /* Adds some padding */
-    z-index: 1; /* Ensures the content is on top */
-}
+    width: 100%; 
+    margin: 0 auto; 
+    padding: 50px; 
+    z-index: 1;
+} 
 
 .augmented-text-container .content {
-    position: absolute; /* This allows positioning relative to the container */
-    top: 200%; /* Vertically center */
-    left: 50%; /* Horizontally center */
-    transform: translate(-50%, -50%); /* To perfectly center the content */
-    color: white; /* For contrast against the background */
-    font-size: 2rem; /* Adjust the size as needed */
+    position: absolute; 
+    top: 200%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white;
+    font-size: 2rem;
 }
 
 .text-apty-augmented{
@@ -314,10 +317,10 @@
 
 .link_wrap-2 {
     background-image: linear-gradient(200deg, #FF7725, #FC52B3);
-    border-radius: 999px; /* This creates a rounded button shape */
-    padding: 12px 30px; /* Slightly increase the padding */
+    border-radius: 999px; 
+    padding: 12px 30px;
     margin-top: 50px;
-    display: inline-block; /* Display the button inline */
+    display: inline-block; 
   }
   
 /* Elimination Section */
@@ -425,7 +428,8 @@
 
 .enhance-section-container{
     background-color: #E6E6E6;
-    padding: 30px;
+    padding-bottom: 200px;
+    padding-top: 250px;
 }
 
 .enhance-text-container{
@@ -452,8 +456,8 @@
   
     text-align: left;
     background-image: linear-gradient(328deg, #FF7725, #FC52B3);
-    border-radius: 20px; /* This creates a rounded button shape */
-    padding: 30px; /* Slightly increase the padding */
+    border-radius: 20px; 
+    padding: 30px;
     margin-top: 50px;
     margin-left: 10%;
     display: flex;
@@ -732,8 +736,7 @@
     color: #efefef;
     padding: 30px;
     padding-left: 50px;
-    position: relative; /* Ensure positioning works for children */
-    height: 100vh;
+    position: relative;
 }
 
 .pink-gradient-bottom {
@@ -743,8 +746,8 @@
 }
 
 .ready-to-enhance-container .text-container {
-    max-width: 50%; /* Limit text width */
-    z-index: 2; /* Ensure text is above the image */
+    max-width: 50%;
+    z-index: 2;
 }
 
 .ready-to-enhance-container .text-container h1 {
@@ -756,8 +759,8 @@
     width: 50%;
     top: 25%;
     right: 25%;
-    transform: translate(50%, -50%); /* Center vertically and shift right */
-    z-index: 1; /* Make sure it’s behind the text */
+    transform: translate(50%, -50%);
+    z-index: 1; 
 }
 
 
@@ -789,8 +792,8 @@ footer .footer-list-container h3{
 footer .footer-list-container a {
     color: #888888;
     font-size: 20px;
-    display: inline-block; /* Allows them to be inline yet control spacing */
-    margin-bottom: 10px; /* Adds space between the elements */
+    display: inline-block; 
+    margin-bottom: 10px; 
     font-weight: bold;
     text-decoration: none;
 }
@@ -801,32 +804,52 @@ footer .footer-list-container a:hover{
 }
 
 .footer-copyright {
-    text-align: center; /* Center the text */
-    color: #888888; /* Lighter color for contrast */
-    font-size: 16px; /* Adjust size as needed */
-    margin-top: 20px; /* Add space above the copyright */
+    text-align: center; 
+    color: #888888; 
+    font-size: 16px; 
+    margin-top: 20px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .footer-copyright p {
-    margin: 0; /* Remove default margins for better spacing */
+    margin: 0;
 }
 
-
-.social-icons {
-    margin-top: 10px;
-}
 
 .social-icons a {
-    color: #888888; /* Icon color */
-    font-size: 24px; /* Icon size */
+    color: #888888; 
+    font-size: 24px; 
     margin: 0 10px; /* Spacing between icons */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.social-icons a:hover {
-    color: #ffffff; /* Change color on hover */
+.social-icons {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap: 10px; 
+    margin-top: 10px; 
 }
+
+.social-icons a:hover {
+    color: #ffffff; 
+}
+
+.line-image{
+    position: absolute;
+    margin-left: 80px;
+    margin-top: -200px;
+
+}
+
+/* Mobile hidden container */
+
+.hero-mobile-container{
+    display: none;
+}
+
+}
+ 

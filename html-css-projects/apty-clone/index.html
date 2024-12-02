@@ -1,231 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apty Website Clone</title>
+    <link rel="stylesheet" href="./poornima-ranguri/css/responsive.css" />
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        background-color: #f4f4f9;
+      }
 
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+      }
 
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #fff;
-        }
+      .container {
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 20px;
+        background: #fff;
+      }
 
-        .container .header {
-            display: flex;
-            flex-wrap: wrap;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
+      .container .header {
+        display: flex;
+        flex-wrap: wrap;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
 
-        .container iframe {
-            width: 100%;
-            height: 100vh;
-        }
+      .container iframe {
+        width: 100%;
+        height: 100vh;
+      }
 
-        .topics,
-        .assignments {
-            flex: 1;
-            min-width: 300px;
-            margin: 10px;
-        }
+      .topics,
+      .assignments {
+        flex: 1;
+        min-width: 300px;
+        margin: 10px;
+      }
 
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #f4f4f9;
-            padding-bottom: 5px;
-        }
+      h2 {
+        color: #333;
+        border-bottom: 2px solid #f4f4f9;
+        padding-bottom: 5px;
+      }
 
-        ul {
-            padding: 0;
-            margin: 10px 0;
-            list-style: none;
-        }
+      ul {
+        padding: 0;
+        margin: 10px 0;
+        list-style: none;
+      }
 
-        ul li {
-            padding: 5px 0;
-        }
+      ul li {
+        padding: 5px 0;
+      }
 
-        ul li::before {
-            content: "•";
-            color: #333;
-            font-weight: bold;
-            display: inline-block;
-            width: 20px;
-        }
+      ul li::before {
+        content: "•";
+        color: #333;
+        font-weight: bold;
+        display: inline-block;
+        width: 20px;
+      }
 
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: #333;
-            color: #fff;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background: #333;
+        color: #fff;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Apty Website Clone</h1>
+      <h1>Apty Website Clone</h1>
     </header>
     <div class="container">
-        <div class="header">
-            <div class="topics">
-                <h1>Key Areas to Cover During Implementation</h1>
+      <div class="header">
+        <div class="topics">
+          <h1>Key Areas to Cover During Implementation</h1>
 
-                <h2>Reference Links</h2>
-                <ul>
-                    <li>Website link: <a href="https://www.apty.io" target="_blank">apty.io</a></li>
-                </ul>
-                
-                <h2>Project Organization</h2>
-                <ul>
-                    <li>Folder structure (e.g., separating assets like images, CSS files, etc.)</li>
-                    <li>Logical grouping of pages/modules.</li>
-                </ul>
+          <h2>Reference Links</h2>
+          <ul>
+            <li>
+              Website link:
+              <a href="https://www.apty.io" target="_blank">apty.io</a>
+            </li>
+          </ul>
 
-                <h2>Responsiveness and Layout</h2>
-                <ul>
-                    <li>Use of responsive design principles (e.g., media queries, flexbox, grid).</li>
-                    <li>Proper alignment, spacing, and use of margins and padding.</li>
-                </ul>
+          <h2>Project Organization</h2>
+          <ul>
+            <li>
+              Folder structure (e.g., separating assets like images, CSS files,
+              etc.)
+            </li>
+            <li>Logical grouping of pages/modules.</li>
+          </ul>
 
-                <h2>Semantic HTML</h2>
-                <ul>
-                    <li>Use of semantic tags (&lt;header&gt;, &lt;main&gt;, &lt;section&gt;, &lt;article&gt;,
-                        &lt;footer&gt;).</li>
-                    <li>Accessibility considerations (e.g., aria-labels, alt attributes for images).</li>
-                </ul>
+          <h2>Responsiveness and Layout</h2>
+          <ul>
+            <li>
+              Use of responsive design principles (e.g., media queries, flexbox,
+              grid).
+            </li>
+            <li>Proper alignment, spacing, and use of margins and padding.</li>
+          </ul>
 
-                <h2>Code Cleanliness</h2>
-                <ul>
-                    <li>Readable and maintainable code (e.g., meaningful class names, comments).</li>
-                    <li>Proper indentation and formatting.</li>
-                </ul>
+          <h2>Semantic HTML</h2>
+          <ul>
+            <li>
+              Use of semantic tags (&lt;header&gt;, &lt;main&gt;,
+              &lt;section&gt;, &lt;article&gt;, &lt;footer&gt;).
+            </li>
+            <li>
+              Accessibility considerations (e.g., aria-labels, alt attributes
+              for images).
+            </li>
+          </ul>
 
-                <h2>Use of CSS Best Practices</h2>
-                <ul>
-                    <li>Modular and reusable CSS (avoiding inline styles).</li>
-                    <li>Use of variables or pre-processors (if applicable).</li>
-                    <li>Effective use of selectors to avoid specificity conflicts.</li>
-                </ul>
+          <h2>Code Cleanliness</h2>
+          <ul>
+            <li>
+              Readable and maintainable code (e.g., meaningful class names,
+              comments).
+            </li>
+            <li>Proper indentation and formatting.</li>
+          </ul>
 
-                <h2>Aesthetic Fidelity</h2>
-                <ul>
-                    <li>Attention to detail in mimicking design elements (e.g., colors, fonts, buttons, etc.).</li>
-                    <li>Consistency in styles across similar components.</li>
-                </ul>
+          <h2>Use of CSS Best Practices</h2>
+          <ul>
+            <li>Modular and reusable CSS (avoiding inline styles).</li>
+            <li>Use of variables or pre-processors (if applicable).</li>
+            <li>Effective use of selectors to avoid specificity conflicts.</li>
+          </ul>
 
-                <h2>Interactivity</h2>
-                <ul>
-                    <li>Use of pseudo-classes (:hover, :focus, etc.) for basic interactions.</li>
-                    <li>Inclusion of basic animations or transitions to enhance user experience.</li>
-                </ul>
+          <h2>Aesthetic Fidelity</h2>
+          <ul>
+            <li>
+              Attention to detail in mimicking design elements (e.g., colors,
+              fonts, buttons, etc.).
+            </li>
+            <li>Consistency in styles across similar components.</li>
+          </ul>
 
-                <h2>Performance Optimization</h2>
-                <ul>
-                    <li>Proper image optimization (file types, sizes).</li>
-                    <li>Minimal use of unnecessary CSS rules or assets.</li>
-                </ul>
+          <h2>Interactivity</h2>
+          <ul>
+            <li>
+              Use of pseudo-classes (:hover, :focus, etc.) for basic
+              interactions.
+            </li>
+            <li>
+              Inclusion of basic animations or transitions to enhance user
+              experience.
+            </li>
+          </ul>
 
-                <h2>Scalability and Extensibility</h2>
-                <ul>
-                    <li>Does the solution allow for future growth (e.g., adding new modules/pages easily)?</li>
-                    <li>Logical grouping of similar components for easier updates.</li>
-                </ul>
+          <h2>Performance Optimization</h2>
+          <ul>
+            <li>Proper image optimization (file types, sizes).</li>
+            <li>Minimal use of unnecessary CSS rules or assets.</li>
+          </ul>
 
-                <h2>Documentation and Comments</h2>
-                <ul>
-                    <li>A brief explanation of their approach to structuring modules/pages.</li>
-                    <li>Inline comments in the code to clarify choices where necessary.</li>
-                </ul>
-            </div>
+          <h2>Scalability and Extensibility</h2>
+          <ul>
+            <li>
+              Does the solution allow for future growth (e.g., adding new
+              modules/pages easily)?
+            </li>
+            <li>Logical grouping of similar components for easier updates.</li>
+          </ul>
+
+          <h2>Documentation and Comments</h2>
+          <ul>
+            <li>
+              A brief explanation of their approach to structuring
+              modules/pages.
+            </li>
+            <li>
+              Inline comments in the code to clarify choices where necessary.
+            </li>
+          </ul>
         </div>
-        <div>
-            <h2>Projects</h2>
-            <details>
-                <summary>Likhith Reddy Gade</summary>
-                <iframe src="./likhith-reddy-gade.html"></iframe>
-            </details>
-            <details>
-                <summary>U Sainath Rao</summary>
-                <iframe src="./u-sainath-rao.html"></iframe>
-            </details>
-            <details>
-                <summary>Prem Rajput</summary>
-                <iframe src="./prem-rajput.html"></iframe>
-            </details>
-            <details>
-                <summary>Tarun Sharma</summary>
-                <iframe src="./tarun-sharma.html"></iframe>
-            </details>
-            <details>
-                <summary>Rohith Kotipalli</summary>
-                <iframe src="./rohith-kotipalli.html"></iframe>
-            </details>
-            <details>
-                <summary>Poornima Ranguri</summary>
-                <iframe src="./poornima-ranguri.html"></iframe>
-            </details>
-            <details>
-                <summary>Anusree Vutlapalli</summary>
-                <iframe src="./anusree-vutlapalli.html"></iframe>
-            </details>
-            <details>
-                <summary>Madhuri Udathu</summary>
-                <iframe src="./madhuri-udathu.html"></iframe>
-            </details>
-            <details>
-                <summary>Pranathi Akula</summary>
-                <iframe src="./pranathi-akula.html"></iframe>
-            </details>
-            <details>
-                <summary>Preeti Patil SN</summary>
-                <iframe src="./preeti-patil-sn.html"></iframe>
-            </details>
-            <details>
-                <summary>Rakshita R</summary>
-                <iframe src="./rakshita-r.html"></iframe>
-            </details>
-            <details>
-                <summary>Vinod Mudavath</summary>
-                <iframe src="./vinod-mudavath.html"></iframe>
-            </details>
-            <details>
-                <summary>Ram Karthik</summary>
-                <iframe src="./ram-karthik.html"></iframe>
-            </details>
-            <details>
-                <summary>Nishma Medagoni</summary>
-                <iframe src="./nishma-medagoni.html"></iframe>
-            </details>
-            <details>
-                <summary>Mohammed Abdul Awaiz</summary>
-                <iframe src="./mohammed-abdul-awaiz.html"></iframe>
-            </details>
-        </div>
+      </div>
+      <div>
+        <h2>Projects</h2>
+        <details>
+          <summary>Likhith Reddy Gade</summary>
+          <iframe src="./likhith-reddy-gade.html"></iframe>
+        </details>
+        <details>
+          <summary>U Sainath Rao</summary>
+          <iframe src="./u-sainath-rao.html"></iframe>
+        </details>
+        <details>
+          <summary>Prem Rajput</summary>
+          <iframe src="./prem-rajput.html"></iframe>
+        </details>
+        <details>
+          <summary>Tarun Sharma</summary>
+          <iframe src="./tarun-sharma.html"></iframe>
+        </details>
+        <details>
+          <summary>Rohith Kotipalli</summary>
+          <iframe src="./rohith-kotipalli.html"></iframe>
+        </details>
+        <details>
+          <summary>Poornima Ranguri</summary>
+          <iframe src="./poornima-ranguri.html"></iframe>
+        </details>
+        <details>
+          <summary>Anusree Vutlapalli</summary>
+          <iframe src="./anusree-vutlapalli.html"></iframe>
+        </details>
+        <details>
+          <summary>Madhuri Udathu</summary>
+          <iframe src="./madhuri-udathu.html"></iframe>
+        </details>
+        <details>
+          <summary>Pranathi Akula</summary>
+          <iframe src="./pranathi-akula.html"></iframe>
+        </details>
+        <details>
+          <summary>Preeti Patil SN</summary>
+          <iframe src="./preeti-patil-sn.html"></iframe>
+        </details>
+        <details>
+          <summary>Rakshita R</summary>
+          <iframe src="./rakshita-r.html"></iframe>
+        </details>
+        <details>
+          <summary>Vinod Mudavath</summary>
+          <iframe src="./vinod-mudavath.html"></iframe>
+        </details>
+        <details>
+          <summary>Ram Karthik</summary>
+          <iframe src="./ram-karthik.html"></iframe>
+        </details>
+        <details>
+          <summary>Nishma Medagoni</summary>
+          <iframe src="./nishma-medagoni.html"></iframe>
+        </details>
+        <details>
+          <summary>Mohammed Abdul Awaiz</summary>
+          <iframe src="./mohammed-abdul-awaiz.html"></iframe>
+        </details>
+      </div>
     </div>
     <footer>
-        <p>&copy; 2024 CSS Training Program</p>
+      <p>&copy; 2024 CSS Training Program</p>
     </footer>
-</body>
-
+  </body>
 </html>
