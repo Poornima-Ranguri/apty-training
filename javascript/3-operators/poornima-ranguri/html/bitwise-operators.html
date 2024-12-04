@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bitwise Operators App</title>
+    <link rel="stylesheet" href="../css/bitwise-operaors.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Bitwise Operators App</h1>
+    </header>
+    <main>
+      <section class="inputs-section">
+        <div>
+          <label for="value1">Value 1:</label>
+          <input type="number" id="value1" />
+        </div>
+        <div>
+          <label for="value2">Value 2:</label>
+          <input type="number" id="value2" />
+        </div>
+      </section>
+      <section class="buttons-section">
+        <button onclick="applyAndOperator()">AND (&)</button>
+        <button onclick="applyOrOperator()">OR (|)</button>
+        <button onclick="applyXorOperator()">XOR (^)</button>
+        <button onclick="applyNotOperator()">NOT (~)</button>
+        <button onclick="applyLeftShift()">Left Shift (<<)</button>
+        <button onclick="applyRightShift()">Right Shift (>>)</button>
+      </section>
+      <section>
+        <p id="result">Result:</p>
+      </section>
+    </main>
+    <footer>
+      <p>© 2024 Bitwise Operators App | Developed by Poornima Ranguri</p>
+    </footer>
+    <script src="../javascript/bitwise-operators.js"></script>
+  </body>
+</html>

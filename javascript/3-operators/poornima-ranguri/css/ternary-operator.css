@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: darkcyan;
+    padding: 20px 0;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  input:focus {
+    outline: none;
+    border-color: darkcyan;
+  }
+  
+  #result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: darkcyan;
+  }
+  
+  @media (max-width: 768px) {
+    main {
+      padding: 10px;
+    }
+  }
+  
+
+
+  footer {
+    background-color: darkcyan;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .footer-content p {
+    margin: 5px 0;
+  }
+  
+  footer .footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+
+  button {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+  }
+  
+  button:hover {
+    background-color: #008b8b; /* Slightly darker shade of darkcyan */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  button:active {
+    background-color: #006f6f; /* Even darker shade on click */
+    transform: scale(0.98); /* Shrink the button slightly when clicked */
+  }
+  

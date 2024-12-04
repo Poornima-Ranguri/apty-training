@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: aliceblue;
+    margin: 20px;
+  }
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  main {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .inputs-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  select,
+  button {
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #008b8b;
+    transform: scale(1.05);
+  }
+  
+  button:active {
+    background-color: #006f6f;
+    transform: scale(0.98);
+  }
+  
+  #result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+
+
+  footer {
+    background-color: darkcyan;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer .footer-content p {
+    margin: 5px 0;
+  }
+  
+  footer .footer-content a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  footer .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  .buttons-container{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

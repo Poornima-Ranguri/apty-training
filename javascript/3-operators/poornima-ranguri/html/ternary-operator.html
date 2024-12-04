@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ternary Operator Form</title>
+    <link rel="stylesheet" href="../css/ternary-operator.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Ternary Operator</h1>
+    </header>
+    <main>
+      <section class="form-container">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            required
+            placeholder="Enter Your First Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            required
+            placeholder="Enter Your Last Name"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="age"
+            required
+            placeholder="Enter Your Age"
+          />
+        </div>
+      </section>
+      <section>
+        <div>
+          <button onclick="checkingAge()">Check The Eligibility!</button>
+          <p id="result"></p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Ternary Operator Form. All Rights Reserved.</p>
+        <p>
+          <a href="https://apty.io" target="_blank">Privacy Policy</a> |
+          <a href="https://apty.io" target="_blank">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+
+    <script src="../javascript/ternary-operator.js"></script>
+  </body>
+</html>

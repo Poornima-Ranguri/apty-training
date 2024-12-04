@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators App</title>
+    <link rel="stylesheet" href="../css/logical-assignment-operators.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Logical Operators App</h1>
+    </header>
+    <main>
+      <section class="inputs-section">
+        <div>
+          <label for="value1">Value 1:</label>
+          <input type="text" id="value1" />
+        </div>
+        <div>
+          <label for="type1">Type 1:</label>
+          <select id="type1">
+            <option value="string">String</option>
+            <option value="number">Number</option>
+            <option value="boolean">Boolean</option>
+          </select>
+        </div>
+      </section>
+      <section class="inputs-section">
+        <div>
+          <label for="value2">Value 2:</label>
+          <input type="text" id="value2" />
+        </div>
+        <div>
+          <label for="type2">Type 2:</label>
+          <select id="type2">
+            <option value="string">String</option>
+            <option value="number">Number</option>
+            <option value="boolean">Boolean</option>
+          </select>
+        </div>
+      </section>
+      <section class="buttons-container">
+        <button onclick="applyAndOperator()">&&=</button>
+        <button onclick="applyOrOperator()">||=</button>
+        <button onclick="applyNullishCoalescingOperator()">??=</button>
+      </section>
+      <section>
+        <p id="result">Result:</p>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Ternary Operator Form. All Rights Reserved.</p>
+        <p>
+          <a href="https://apty.io" target="_blank">Privacy Policy</a> |
+          <a href="https://apty.io" target="_blank">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+    <script src="../javascript/logical-assignment-operators.js"></script>
+  </body>
+</html>
