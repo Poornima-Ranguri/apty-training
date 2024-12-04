@@ -3,67 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Data Comparison App</title>
+    <meta
+      name="description"
+      content="A Data Comparison App for comparing different values and types using various operators."
+    />
+    <title>Data Comparison App | Compare Values & Types</title>
     <link rel="stylesheet" href="../css/comparision-operators.css" />
   </head>
   <body>
-    <div class="container">
-      <h2>Data Comparison App</h2>
-      <div class="value-container">
+    <header>
+      <h1>Data Comparison App</h1>
+    </header>
+    <main>
+      <section class="value-container">
+        <h2>Enter Values and Types</h2>
         <div>
           <label for="value1">Value 1:</label>
-          <input type="text" id="value1" />
+          <input
+            type="text"
+            id="value1"
+            name="value1"
+            aria-label="Enter the first value"
+          />
         </div>
-
         <div>
           <label for="type1">Type 1:</label>
-          <select id="type1">
+          <select
+            id="type1"
+            name="type1"
+            aria-label="Select the type of first value"
+          >
             <option value="string">String</option>
             <option value="number">Number</option>
             <option value="boolean">Boolean</option>
             <option value="array">Array</option>
             <option value="object">Object</option>
             <option value="date">Date</option>
-            <option value="null">Null</option>
-            <option value="undefined">Undefined</option>
           </select>
         </div>
-      </div>
-      <div class="value-container">
+      </section>
+
+      <section class="value-container">
         <div>
           <label for="value2">Value 2:</label>
-          <input type="text" id="value2" />
+          <input
+            type="text"
+            id="value2"
+            name="value2"
+            aria-label="Enter the second value"
+          />
         </div>
-
         <div>
           <label for="type2">Type 2:</label>
-          <select id="type2">
+          <select
+            id="type2"
+            name="type2"
+            aria-label="Select the type of second value"
+          >
             <option value="string">String</option>
             <option value="number">Number</option>
             <option value="boolean">Boolean</option>
             <option value="array">Array</option>
             <option value="object">Object</option>
             <option value="date">Date</option>
-            <option value="null">Null</option>
-            <option value="undefined">Undefined</option>
           </select>
         </div>
-      </div>
+      </section>
 
-      <div class="value-container">
-        <button onclick="compareEquality()">==</button>
-        <button onclick="compareStrictEquality()">===</button>
-        <button onclick="compareInequality()">!=</button>
-        <button onclick="compareStrictInequality()">!==</button>
-        <button onclick="compareGreaterThan()">&gt;</button>
-        <button onclick="compareLessThan()">&lt;</button>
-        <button onclick="compareGreaterOrEqual()">&gt;=</button>
-        <button onclick="compareLessOrEqual()">&lt;=</button>
-      </div>
+      <section class="value-container">
+        <h2>Choose Comparison Operators</h2>
+        <button
+          type="button"
+          onclick="compareEquality()"
+          aria-label="Compare values using =="
+        >
+          ==
+        </button>
+        <button
+          type="button"
+          onclick="compareStrictEquality()"
+          aria-label="Compare values using ==="
+        >
+          ===
+        </button>
+        <button
+          type="button"
+          onclick="compareInequality()"
+          aria-label="Compare values using !="
+        >
+          !=
+        </button>
+        <button
+          type="button"
+          onclick="compareStrictInequality()"
+          aria-label="Compare values using !=="
+        >
+          !==
+        </button>
+        <button
+          type="button"
+          onclick="compareGreaterThan()"
+          aria-label="Compare values using >"
+        >
+          &gt;
+        </button>
+        <button
+          type="button"
+          onclick="compareLessThan()"
+          aria-label="Compare values using <"
+        >
+          &lt;
+        </button>
+        <button
+          type="button"
+          onclick="compareGreaterOrEqual()"
+          aria-label="Compare values using >="
+        >
+          &gt;=
+        </button>
+        <button
+          type="button"
+          onclick="compareLessOrEqual()"
+          aria-label="Compare values using <="
+        >
+          &lt;=
+        </button>
+      </section>
 
-      <div class="result" id="result">Result :</div>
-    </div>
-
+      <section>
+        <h2>Result</h2>
+        <div class="result" id="result" role="status" aria-live="polite">
+          Result:
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Data Comparison App. All Rights Reserved.</p>
+    </footer>
     <script src="../javascript/comparision-operators.js"></script>
   </body>
 </html>
