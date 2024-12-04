@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operator</title>
+    <link rel="stylesheet" href="../css/logical-operators.css" />
+  </head>
+  <body>
+    <h2>Logical Operators App</h2>
+
+    <div class="input-group">
+      <label for="value1">Value 1:</label>
+      <input type="text" id="value1" />
+      <select id="type1">
+        <option value="string">String</option>
+        <option value="number">Number</option>
+        <option value="boolean">Boolean</option>
+        <option value="array">Array</option>
+        <option value="object">Object</option>
+        <option value="null">Null</option>
+        <option value="undefined">Undefined</option>
+      </select>
+    </div>
+
+    <div class="input-group">
+      <label for="value2">Value 2:</label>
+      <input type="text" id="value2" />
+      <select id="type2">
+        <option value="string">String</option>
+        <option value="number">Number</option>
+        <option value="boolean">Boolean</option>
+        <option value="array">Array</option>
+        <option value="object">Object</option>
+        <option value="null">Null</option>
+        <option value="undefined">Undefined</option>
+      </select>
+    </div>
+
+    <div class="operators">
+      <button onclick="performLogicalAnd()">&&</button>
+      <button onclick="performLogicalOr()">||</button>
+      <button onclick="performLogicalNot()">!</button>
+    </div>
+
+    <div id="result">Result :</div>
+    <script src="../javascript/logical-operator.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../css/calculator.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Calculator</h1>
+    </header>
+    <main>
+      <section>
+        <div>
+          <input
+            type="number"
+            id="value1"
+            name="value1"
+            placeholder="Enter first number"
+            required
+            min="1"
+            max="100"
+          />
+          <input
+            type="number"
+            id="value2"
+            name="value2"
+            placeholder="Enter second number"
+            required
+            min="1"
+            max="100"
+          />
+        </div>
+        <ul class="list-container">
+          <li class="list-item">
+            <button onclick="onAdd()">+</button>
+          </li>
+          <li class="list-item">
+            <button onclick="onSubtract()">-</button>
+          </li>
+          <li class="list-item">
+            <button onclick="onMultiply()">*</button>
+          </li>
+          <li class="list-item">
+            <button onclick="onDivide()">/</button>
+          </li>
+          <li class="list-item">
+            <button onclick="onPercentile()">%</button>
+          </li>
+        </ul>
+      </section>
+      <div class="result-container">
+        <h3>Result :</h3>
+        <p id="result"></p>
+      </div>
+
+      <div class="contaienr-calculator">
+        <h1>Increment and Decrement Calculator</h1>
+
+        <input
+          class="input"
+          type="number"
+          name="increment or decrement a number"
+          id="num"
+          required
+          placeholder="Enter a number that you want to increment"
+          min="1"
+          max="100"
+        />
+
+        <ul class="list-container">
+          <li class="list-item">
+            <button onclick="onIncrement()">++</button>
+          </li>
+          <li class="list-item">
+            <button onclick="onDecrement()">--</button>
+          </li>
+        </ul>
+
+        <div class="result-container">
+          <h3>Result :</h3>
+          <p id="result2"></p>
+        </div>
+      </div>
+
+      <div class="clear-container">
+        <button onclick="clearInputs()" class="button-clear">Clear</button>
+      </div>
+    </main>
+    <script src="../javascript/calculator.js"></script>
+  </body>
+</html>
