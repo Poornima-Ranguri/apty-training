@@ -1,87 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Apty Training Portal</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header class="logo-header">
-        <div class="apty-login-logo"><svg width="128" height="60" xmlns="http://www.w3.org/2000/svg"><path d="M103.45 10.33l8.03 24.8 7.9-24.8H128l-13.15 36.5c-1.92 5.18-4 8.67-6.24 10.47-2.25 1.8-4.57 2.7-6.98 2.7a16.1 16.1 0 01-5.44-.99v-7.23c1.38.58 2.74.87 4.07.87 2.48 0 4.78-2.88 6.91-8.63L94.3 10.33h9.15zm-53.08-.57c1.18 0 2.36.1 3.54.28 1.17.19 2.56.67 4.15 1.47 1.6.79 2.96 1.81 4.1 3.07 1.14 1.25 2.13 3.1 2.97 5.53a25.84 25.84 0 011.26 8.42c0 5.84-1.43 10.33-4.3 13.46-2.86 3.13-6.96 4.7-12.29 4.7-2 0-3.97-.22-5.89-.64v13.09H35.3V21.76c0-3.28 1.23-6.1 3.7-8.46 2.47-2.36 6.26-3.54 11.38-3.54zm-35.65.14c5.11 0 9.02 1.3 11.73 3.9 2.71 2.58 4.07 6.33 4.07 11.24v9.62c0 3.27-1.24 6.1-3.7 8.45-2.46 2.36-6.25 3.54-11.37 3.54-5.29 0-9.19-1.18-11.7-3.56A11.46 11.46 0 010 34.45c0-.72.07-1.46.21-2.22.14-.75.51-1.7 1.11-2.84a9.84 9.84 0 012.45-3c1.04-.85 2.57-1.6 4.59-2.2 2.02-.62 4.41-.93 7.16-.93 1.96 0 4.06.16 6.3.49 0-4.54-2.53-6.8-7.6-6.8-4.03 0-7.54.6-10.53 1.81v-7.04A31.95 31.95 0 0114.72 9.9zM82.63 0v10.54h8.49v7.34h-8.49v17.53c0 1.54.32 2.57.97 3.1.64.53 1.78.8 3.42.8 1.54 0 2.9-.25 4.1-.76v7.06c-1.68.7-3.52 1.04-5.5 1.04h-.18c-3.55 0-6.35-1.04-8.38-3.13-2.04-2.09-3.05-4.96-3.05-8.63v-17h-6.03v-7.35H74V0h8.62zM50.37 17.12c-4.3 0-6.46 1.28-6.46 3.84v18.6c2 .28 3.76.42 5.3.42 2.78 0 4.9-.8 6.36-2.42 1.46-1.62 2.2-4.48 2.2-8.57 0-4.19-.56-7.21-1.66-9.07-1.1-1.87-3.01-2.8-5.74-2.8zM16.75 28.73c-5.4 0-8.1 1.55-8.12 4.64 0 3.81 2.25 5.72 6.75 5.72h.07c4.3 0 6.44-1.8 6.44-5.4v-4.5c-2-.28-3.72-.44-5.14-.46z" fill="#FF4001" fill-rule="evenodd"></path></svg></div>
-        <h1>Training Portal</h1>
+      <div class="apty-login-logo">
+        <svg width="128" height="60" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M103.45 10.33l8.03 24.8 7.9-24.8H128l-13.15 36.5c-1.92 5.18-4 8.67-6.24 10.47-2.25 1.8-4.57 2.7-6.98 2.7a16.1 16.1 0 01-5.44-.99v-7.23c1.38.58 2.74.87 4.07.87 2.48 0 4.78-2.88 6.91-8.63L94.3 10.33h9.15zm-53.08-.57c1.18 0 2.36.1 3.54.28 1.17.19 2.56.67 4.15 1.47 1.6.79 2.96 1.81 4.1 3.07 1.14 1.25 2.13 3.1 2.97 5.53a25.84 25.84 0 011.26 8.42c0 5.84-1.43 10.33-4.3 13.46-2.86 3.13-6.96 4.7-12.29 4.7-2 0-3.97-.22-5.89-.64v13.09H35.3V21.76c0-3.28 1.23-6.1 3.7-8.46 2.47-2.36 6.26-3.54 11.38-3.54zm-35.65.14c5.11 0 9.02 1.3 11.73 3.9 2.71 2.58 4.07 6.33 4.07 11.24v9.62c0 3.27-1.24 6.1-3.7 8.45-2.46 2.36-6.25 3.54-11.37 3.54-5.29 0-9.19-1.18-11.7-3.56A11.46 11.46 0 010 34.45c0-.72.07-1.46.21-2.22.14-.75.51-1.7 1.11-2.84a9.84 9.84 0 012.45-3c1.04-.85 2.57-1.6 4.59-2.2 2.02-.62 4.41-.93 7.16-.93 1.96 0 4.06.16 6.3.49 0-4.54-2.53-6.8-7.6-6.8-4.03 0-7.54.6-10.53 1.81v-7.04A31.95 31.95 0 0114.72 9.9zM82.63 0v10.54h8.49v7.34h-8.49v17.53c0 1.54.32 2.57.97 3.1.64.53 1.78.8 3.42.8 1.54 0 2.9-.25 4.1-.76v7.06c-1.68.7-3.52 1.04-5.5 1.04h-.18c-3.55 0-6.35-1.04-8.38-3.13-2.04-2.09-3.05-4.96-3.05-8.63v-17h-6.03v-7.35H74V0h8.62zM50.37 17.12c-4.3 0-6.46 1.28-6.46 3.84v18.6c2 .28 3.76.42 5.3.42 2.78 0 4.9-.8 6.36-2.42 1.46-1.62 2.2-4.48 2.2-8.57 0-4.19-.56-7.21-1.66-9.07-1.1-1.87-3.01-2.8-5.74-2.8zM16.75 28.73c-5.4 0-8.1 1.55-8.12 4.64 0 3.81 2.25 5.72 6.75 5.72h.07c4.3 0 6.44-1.8 6.44-5.4v-4.5c-2-.28-3.72-.44-5.14-.46z"
+            fill="#FF4001"
+            fill-rule="evenodd"
+          ></path>
+        </svg>
+      </div>
+      <h1>Training Portal</h1>
     </header>
     <div class="container">
-        <aside class="sidebar">
-            <h2>Training Topics</h2>
-            <ul>
-                <li>
-                    <a href="#html" class="collapsible">HTML</a>
-                    <ul class="subsection">
-                        <li><a href="#html-assignment1" onclick="showContent('html-assignment1')">Assignment1</a></li>
-                        <li><a href="#html-assignment2" onclick="showContent('html-assignment2')">Assignment2</a></li>
-                        <li><a href="#html-assignment3" onclick="showContent('html-assignment3')">Assignment3</a></li>
-                        <li><a href="#html-assignment4" onclick="showContent('html-assignment4')">Assignment4</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#css" class="collapsible">CSS</a>
-                    <ul class="subsection">
-                        <li><a href="#css-basics" onclick="showContent('css-basics')">Basics</a></li>
-                        <li><a href="#css-advanced" onclick="showContent('css-advanced')">Advanced</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#html-css-projects" class="collapsible">HTML & CSS Projects</a>
-                     <ul class="subsection">
-                        <li><a href="#html-css-projects-apty-clone" onclick="showContent('html-css-projects-apty-clone')">Apty Clone</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#js" class="collapsible">JavaScript</a>
-                    <ul class="subsection">
-                        <li><a href="#js-1-intro" onclick="showContent('js-1-intro')">Introduction</a></li>
-                        <li><a href="#js-2-vars-data-types" onclick="showContent('js-2-vars-data-types')">Variables and Data Types</a></li>
-                        <li><a href="#js-3-operators" onclick="showContent('js-3-operators')">Operators</a></li>
-                    </ul>
-                </li>
+      <aside class="sidebar">
+        <h2>Training Topics</h2>
+        <ul>
+          <li>
+            <a href="#html" class="collapsible">HTML</a>
+            <ul class="subsection">
+              <li>
+                <a
+                  href="#html-assignment1"
+                  onclick="showContent('html-assignment1')"
+                  >Assignment1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#html-assignment2"
+                  onclick="showContent('html-assignment2')"
+                  >Assignment2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#html-assignment3"
+                  onclick="showContent('html-assignment3')"
+                  >Assignment3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#html-assignment4"
+                  onclick="showContent('html-assignment4')"
+                  >Assignment4</a
+                >
+              </li>
             </ul>
-        </aside>
-        <main class="content">
-            <section id="html-assignment1" class="topic">
-                <iframe data-src="./html/assignment1/index.html"></iframe>
-            </section>
-            <section id="html-assignment2" class="topic" style="display: none;">
-                <iframe data-src="./html/assignment2/index.html"></iframe>
-            </section>
-            <section id="html-assignment3" class="topic" style="display: none;">
-                <iframe data-src="./html/assignment3/index.html"></iframe>
-            </section>
-            <section id="html-assignment4" class="topic" style="display: none;">
-                <iframe data-src="./html/assignment4/index.html"></iframe>
-            </section>
-            <section id="css-basics" class="topic" style="display: none;">
-                <iframe data-src="./css/basics/index.html"></iframe>
-            </section>
+          </li>
+          <li>
+            <a href="#css" class="collapsible">CSS</a>
+            <ul class="subsection">
+              <li>
+                <a href="#css-basics" onclick="showContent('css-basics')"
+                  >Basics</a
+                >
+              </li>
+              <li>
+                <a href="#css-advanced" onclick="showContent('css-advanced')"
+                  >Advanced</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#html-css-projects" class="collapsible"
+              >HTML & CSS Projects</a
+            >
+            <ul class="subsection">
+              <li>
+                <a
+                  href="#html-css-projects-apty-clone"
+                  onclick="showContent('html-css-projects-apty-clone')"
+                  >Apty Clone</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#js" class="collapsible">JavaScript</a>
+            <ul class="subsection">
+              <li>
+                <a href="#js-1-intro" onclick="showContent('js-1-intro')"
+                  >Introduction</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#js-2-vars-data-types"
+                  onclick="showContent('js-2-vars-data-types')"
+                  >Variables and Data Types</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#js-3-operators"
+                  onclick="showContent('js-3-operators')"
+                  >Operators</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </aside>
+      <main class="content">
+        <section id="html-assignment1" class="topic">
+          <iframe data-src="./html/assignment1/index.html"></iframe>
+        </section>
+        <section id="html-assignment2" class="topic" style="display: none">
+          <iframe data-src="./html/assignment2/index.html"></iframe>
+        </section>
+        <section id="html-assignment3" class="topic" style="display: none">
+          <iframe data-src="./html/assignment3/index.html"></iframe>
+        </section>
+        <section id="html-assignment4" class="topic" style="display: none">
+          <iframe data-src="./html/assignment4/index.html"></iframe>
+        </section>
+        <section id="css-basics" class="topic" style="display: none">
+          <iframe data-src="./css/basics/index.html"></iframe>
+        </section>
 
-            <section id="css-advanced" class="topic" style="display: none;">
-                <iframe data-src="./css/advanced/index.html"></iframe>
-            </section>
-            <section id="html-css-projects-apty-clone" class="topic" style="display: none;">
-                <iframe data-src="./html-css-projects/apty-clone/index.html"></iframe>
-            </section>
+        <section id="css-advanced" class="topic" style="display: none">
+          <iframe data-src="./css/advanced/index.html"></iframe>
+        </section>
+        <section
+          id="html-css-projects-apty-clone"
+          class="topic"
+          style="display: none"
+        >
+          <iframe data-src="./html-css-projects/apty-clone/index.html"></iframe>
+        </section>
 
-            <section id="js-1-intro" class="topic" style="display: none;">
-                <iframe data-src="./javascript/1-introduction/index.html"></iframe>
-            </section>
-            <section id="js-2-vars-data-types" class="topic" style="display: none;">
-                <iframe data-src="./javascript/2-vars-data-types/index.html"></iframe>
-            </section>
-            <section id="js-3-operators" class="topic" style="display: none;">
-                <iframe data-src="./javascript/3-operators/index.html"></iframe>
-            </section>
-        </main>
+        <section id="js-1-intro" class="topic" style="display: none">
+          <iframe data-src="./javascript/1-introduction/index.html"></iframe>
+        </section>
+        <section id="js-2-vars-data-types" class="topic" style="display: none">
+          <iframe data-src="./javascript/2-vars-data-types/index.html"></iframe>
+        </section>
+        <section id="js-3-operators" class="topic" style="display: none">
+          <iframe data-src="./javascript/3-operators/index.html"></iframe>
+        </section>
+      </main>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
